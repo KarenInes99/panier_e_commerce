@@ -3,7 +3,9 @@ const blockButton=document.querySelector('.bloc_bottom')
 const blockTop= document.querySelector('.bloc_top')
 const tbody = document.querySelector('.tbody')
 const cartTotal =document.querySelector('#total')
+const cartLength = document.querySelector('#count')
 const cartKey ='Cart'
+
 const DataBase = [
     {
         name:'Casque',
@@ -67,6 +69,8 @@ function findProductByPK(pk){
         throw new Error(err.message)
     }
 }
+
+
 /// On initialise l'ajoute des produits sur l'interface utilisateur de l'application.
 function productUI(){
    try{
@@ -147,6 +151,7 @@ function cartUI(){
             tbody.appendChild(tr)
         })
         cartTotal.innerText=total + 'F CFA'
+        cartLength.innerText=getcartLength()
 
     }catch(err){
         throw new Error(err.message)
@@ -175,6 +180,7 @@ function cartUpdateUI(pk){
         tr.appendChild(tdPrice)
         tbody.appendChild(tr)
         cartTotal.innerText=total + 'F CFA'
+        cartLength.innerText=getcartLength()
     }catch(err){
         throw new Error(err.message)
     }
@@ -216,4 +222,13 @@ function getCarts(){
     throw new Error(err.message)
    }
 
+}
+
+// Trouver la taille du panier
+function getcartLength(){
+    try{
+        return getCarts().length
+    }catch(err){
+    throw new Error(err.message)
+    }
 }
