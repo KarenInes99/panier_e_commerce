@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <title>shop</title>
+</head>
+<body>
+    <div class="main">
+
+        <div class="head">
+            <div class="search">
+                <input type="text" class="input_txt">
+                <input type="text" class="input_qte">
+                <button class="ajout_prod">Ajouter un article</button>
+
+            </div>
+
+             <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i> 
+                <!-- <i class="fa-solid fa-cart-shopping"></i> -->
+                <p id="count">0</p>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="left">
+
+                <div class="bloc_top">
+                    <div class="box bloc1">
+
+                        <div class="img img1">
+                            <img src="images/aa-1.jpeg" alt="" class="image">
+                        </div>
+                        <div>
+                            <p class="label">Casque</p>
+                            <h2 class="prix">2000 FCFA</h2>
+                        </div>
+                        <div>
+                            <button class="ajout">Ajouter au panier</button>
+                        </div>
+                    </div>
+                    <div class="box bloc2">
+
+                        <div class="img img2">
+                            <img src="images/aa-1.jpeg" alt="" class="image">
+                        </div>
+                        <div>
+                            <p class="label">Apareil photo</p>
+                            <h2 class="prix">2000 FCFA</h2>
+                        </div>
+                        <div>
+                            <button class="ajout">Ajouter au panier</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- fin top -->
+                <div class="bloc_bottom">
+                    <div class="box bloc3">
+    
+                        <div class="img img3">
+                            <img src="images/gg-1.jpeg" alt="" class="image">
+                        </div>
+                        <div>
+                            <p class="label">Telephone</p>
+                            <h2 class="prix">2000 FCFA</h2>
+                        </div>
+                        <div>
+                            <button class="ajout">Ajouter au panier</button>
+    
+                        </div>
+                    </div>
+                    <div class="box bloc4">
+    
+                        <div class="img img4">
+                            <img src="images/hh-2.jpeg" alt="" class="image">
+                        </div>
+                        <div>
+                            <p class="label">Ecouteurs</p>
+                            <h2 class="prix">2000 FCFA</h2>
+                        </div>
+                        <div>
+                            <button class="ajout">Ajouter au panier</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- fin bottom  -->
+
+            </div>
+            <!-- fin left -->
+            
+
+            <div class="right">
+
+                <div class="mon_panier">
+                    <p>Mon panier</p>
+                </div>
+                <div class="panier_vide">Votre panier est vide</div>
+                <div class="foot">
+                    <h3>Total</h3>
+                    <h2 id="total">FCFA 0.00</h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="panier.js"></script>
+</body>
+</html>
